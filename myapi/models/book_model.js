@@ -1,7 +1,7 @@
 const db = require('../database');
 
 const book = {
-  get: function(callback) {
+  getbook: function(callback) {
     return db.query('select * from book', callback);
   },
   getById: function(id, callback) {
